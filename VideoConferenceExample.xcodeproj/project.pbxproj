@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A8F472412621D63002CFAB7 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8F472312621D63002CFAB7 /* Quartz.framework */; };
+		1A8F47EF126224FC002CFAB7 /* CGImageWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F47EE126224FC002CFAB7 /* CGImageWrapper.m */; };
+		1A8F48261262296B002CFAB7 /* STOCVFaceTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F48251262296B002CFAB7 /* STOCVFaceTracker.m */; };
+		1A8F487A12624CB2002CFAB7 /* STPictureInPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F487912624CB2002CFAB7 /* STPictureInPictureView.m */; };
+		1A8F4B1E12639D3A002CFAB7 /* STFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F4B1D12639D3A002CFAB7 /* STFace.m */; };
+		1AA1EB69125F7E3100C9E963 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1EB68125F7E3100C9E963 /* QTKit.framework */; };
+		1AA1EB6B125F7E3100C9E963 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1EB6A125F7E3100C9E963 /* QuartzCore.framework */; };
+		1AA1EC4D125FBB2900C9E963 /* libcv.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1EC48125FBB2900C9E963 /* libcv.2.1.0.dylib */; };
+		1AA1EC4F125FBB2900C9E963 /* libcxcore.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1EC4A125FBB2900C9E963 /* libcxcore.2.1.0.dylib */; };
+		1AA1EC58125FBCF800C9E963 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1EC57125FBCF800C9E963 /* haarcascade_frontalface_alt2.xml */; };
+		1AB77FB212665448005DDED5 /* control_record.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB77FB112665448005DDED5 /* control_record.png */; };
+		1AB78047126660A5005DDED5 /* control_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB78046126660A5005DDED5 /* control_stop.png */; };
+		1AB780681266638B005DDED5 /* control_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB780671266638B005DDED5 /* control_pause.png */; };
+		1AB78154126749AA005DDED5 /* control_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB78153126749AA005DDED5 /* control_start.png */; };
+		1ADC3EE512652FBA00B9A067 /* STWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC3EE412652FBA00B9A067 /* STWindow.m */; };
+		1ADC3F2212653F8E00B9A067 /* STButtonBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC3F2112653F8E00B9A067 /* STButtonBarView.m */; };
+		1ADC42C5126600F000B9A067 /* STButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC42C4126600F000B9A067 /* STButton.m */; };
+		1AF43F5C1260D96D00B89821 /* ChatWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF43F5B1260D96D00B89821 /* ChatWindow.xib */; };
+		1AF43F921260EABD00B89821 /* ChatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF43F911260EABD00B89821 /* ChatWindowController.m */; };
+		1AF43FF91260F15000B89821 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF43FF81260F15000B89821 /* CoreVideo.framework */; };
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* VideoConferenceExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* VideoConferenceExampleAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1A8F472312621D63002CFAB7 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		1A8F47ED126224FC002CFAB7 /* CGImageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageWrapper.h; sourceTree = "<group>"; };
+		1A8F47EE126224FC002CFAB7 /* CGImageWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageWrapper.m; sourceTree = "<group>"; };
+		1A8F48241262296B002CFAB7 /* STOCVFaceTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STOCVFaceTracker.h; sourceTree = "<group>"; };
+		1A8F48251262296B002CFAB7 /* STOCVFaceTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STOCVFaceTracker.m; sourceTree = "<group>"; };
+		1A8F487812624CB2002CFAB7 /* STPictureInPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPictureInPictureView.h; sourceTree = "<group>"; };
+		1A8F487912624CB2002CFAB7 /* STPictureInPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPictureInPictureView.m; sourceTree = "<group>"; };
+		1A8F4B1C12639D3A002CFAB7 /* STFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFace.h; sourceTree = "<group>"; };
+		1A8F4B1D12639D3A002CFAB7 /* STFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFace.m; sourceTree = "<group>"; };
+		1AA1EB68125F7E3100C9E963 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		1AA1EB6A125F7E3100C9E963 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1AA1EC48125FBB2900C9E963 /* libcv.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcv.2.1.0.dylib; path = opencv/lib/libcv.2.1.0.dylib; sourceTree = "<group>"; };
+		1AA1EC4A125FBB2900C9E963 /* libcxcore.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcxcore.2.1.0.dylib; path = opencv/lib/libcxcore.2.1.0.dylib; sourceTree = "<group>"; };
+		1AA1EC57125FBCF800C9E963 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		1AB77FB112665448005DDED5 /* control_record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control_record.png; sourceTree = "<group>"; };
+		1AB78046126660A5005DDED5 /* control_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control_stop.png; sourceTree = "<group>"; };
+		1AB780671266638B005DDED5 /* control_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control_pause.png; sourceTree = "<group>"; };
+		1AB78153126749AA005DDED5 /* control_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control_start.png; sourceTree = "<group>"; };
+		1ADC3EE312652FBA00B9A067 /* STWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWindow.h; sourceTree = "<group>"; };
+		1ADC3EE412652FBA00B9A067 /* STWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWindow.m; sourceTree = "<group>"; };
+		1ADC3F2012653F8E00B9A067 /* STButtonBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STButtonBarView.h; sourceTree = "<group>"; };
+		1ADC3F2112653F8E00B9A067 /* STButtonBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STButtonBarView.m; sourceTree = "<group>"; };
+		1ADC42C3126600F000B9A067 /* STButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STButton.h; sourceTree = "<group>"; };
+		1ADC42C4126600F000B9A067 /* STButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STButton.m; sourceTree = "<group>"; };
+		1ADC42C61266012500B9A067 /* STUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
+		1AF43F5B1260D96D00B89821 /* ChatWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatWindow.xib; sourceTree = "<group>"; };
+		1AF43F901260EABD00B89821 /* ChatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWindowController.h; sourceTree = "<group>"; };
+		1AF43F911260EABD00B89821 /* ChatWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatWindowController.m; sourceTree = "<group>"; };
+		1AF43FF81260F15000B89821 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* VideoConferenceExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoConferenceExampleAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* VideoConferenceExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoConferenceExampleAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* SkypeTestJGH_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkypeTestJGH_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* VideoConferenceExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VideoConferenceExample-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* VideoConferenceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoConferenceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				1AA1EB69125F7E3100C9E963 /* QTKit.framework in Frameworks */,
+				1AA1EB6B125F7E3100C9E963 /* QuartzCore.framework in Frameworks */,
+				1AA1EC4D125FBB2900C9E963 /* libcv.2.1.0.dylib in Frameworks */,
+				1AA1EC4F125FBB2900C9E963 /* libcxcore.2.1.0.dylib in Frameworks */,
+				1AF43FF91260F15000B89821 /* CoreVideo.framework in Frameworks */,
+				1A8F472412621D63002CFAB7 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* VideoConferenceExampleAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* VideoConferenceExampleAppDelegate.m */,
+				1AF43F901260EABD00B89821 /* ChatWindowController.h */,
+				1AF43F911260EABD00B89821 /* ChatWindowController.m */,
+				1A8F47ED126224FC002CFAB7 /* CGImageWrapper.h */,
+				1A8F47EE126224FC002CFAB7 /* CGImageWrapper.m */,
+				1A8F48241262296B002CFAB7 /* STOCVFaceTracker.h */,
+				1A8F48251262296B002CFAB7 /* STOCVFaceTracker.m */,
+				1A8F487812624CB2002CFAB7 /* STPictureInPictureView.h */,
+				1A8F487912624CB2002CFAB7 /* STPictureInPictureView.m */,
+				1A8F4B1C12639D3A002CFAB7 /* STFace.h */,
+				1A8F4B1D12639D3A002CFAB7 /* STFace.m */,
+				1ADC3EE312652FBA00B9A067 /* STWindow.h */,
+				1ADC3EE412652FBA00B9A067 /* STWindow.m */,
+				1ADC3F2012653F8E00B9A067 /* STButtonBarView.h */,
+				1ADC3F2112653F8E00B9A067 /* STButtonBarView.m */,
+				1ADC42C3126600F000B9A067 /* STButton.h */,
+				1ADC42C4126600F000B9A067 /* STButton.m */,
+				1ADC42C61266012500B9A067 /* STUI.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				1AA1EB68125F7E3100C9E963 /* QTKit.framework */,
+				1AA1EB6A125F7E3100C9E963 /* QuartzCore.framework */,
+				1AF43FF81260F15000B89821 /* CoreVideo.framework */,
+				1A8F472312621D63002CFAB7 /* Quartz.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* VideoConferenceExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA1EC56125FBC9000C9E963 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1EC48125FBB2900C9E963 /* libcv.2.1.0.dylib */,
+				1AA1EC4A125FBB2900C9E963 /* libcxcore.2.1.0.dylib */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SkypeTestJGH */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = SkypeTestJGH;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* SkypeTestJGH_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AB78153126749AA005DDED5 /* control_start.png */,
+				1AB78046126660A5005DDED5 /* control_stop.png */,
+				1AB77FB112665448005DDED5 /* control_record.png */,
+				1AB780671266638B005DDED5 /* control_pause.png */,
+				1AA1EC57125FBCF800C9E963 /* haarcascade_frontalface_alt2.xml */,
+				8D1107310486CEB800E47090 /* VideoConferenceExample-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				1AF43F5B1260D96D00B89821 /* ChatWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1EC56125FBC9000C9E963 /* OpenCV */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* VideoConferenceExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "VideoConferenceExample" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoConferenceExample;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SkypeTestJGH;
+			productReference = 8D1107320486CEB800E47090 /* VideoConferenceExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VideoConferenceExample" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SkypeTestJGH */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* VideoConferenceExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				1AA1EC58125FBCF800C9E963 /* haarcascade_frontalface_alt2.xml in Resources */,
+				1AF43F5C1260D96D00B89821 /* ChatWindow.xib in Resources */,
+				1AB77FB212665448005DDED5 /* control_record.png in Resources */,
+				1AB78047126660A5005DDED5 /* control_stop.png in Resources */,
+				1AB780681266638B005DDED5 /* control_pause.png in Resources */,
+				1AB78154126749AA005DDED5 /* control_start.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* VideoConferenceExampleAppDelegate.m in Sources */,
+				1AF43F921260EABD00B89821 /* ChatWindowController.m in Sources */,
+				1A8F47EF126224FC002CFAB7 /* CGImageWrapper.m in Sources */,
+				1A8F48261262296B002CFAB7 /* STOCVFaceTracker.m in Sources */,
+				1A8F487A12624CB2002CFAB7 /* STPictureInPictureView.m in Sources */,
+				1A8F4B1E12639D3A002CFAB7 /* STFace.m in Sources */,
+				1ADC3EE512652FBA00B9A067 /* STWindow.m in Sources */,
+				1ADC3F2212653F8E00B9A067 /* STButtonBarView.m in Sources */,
+				1ADC42C5126600F000B9A067 /* STButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SkypeTestJGH_Prefix.pch;
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = ./opencv/include;
+				INFOPLIST_FILE = "SkypeTestJGH-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/opencv/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = SkypeTestJGH;
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VideoConferenceExample_Prefix.pch;
+				HEADER_SEARCH_PATHS = ./opencv/include;
+				INFOPLIST_FILE = "VideoConferenceExample-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/opencv/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VideoConferenceExample;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SSE41_EXTENSIONS = NO;
+				GCC_ENABLE_SSE42_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_FAST_MATH = YES;
+				GCC_MODEL_PPC64 = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "VideoConferenceExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VideoConferenceExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
