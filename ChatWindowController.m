@@ -42,7 +42,7 @@ NSComparisonResult compareViews(id<STUIProtocol> view1, id<STUIProtocol> view2, 
 -(void) awakeFromNib {
     BOOL success = NO;
     NSError *error;
-    
+    __block ChatWindowController *bSelf = self;
     // Attempt to find a video input device
     QTCaptureDevice *cameraDevice = [QTCaptureDevice defaultInputDeviceWithMediaType:QTMediaTypeVideo];
     QTCaptureDevice *micDevice    = [QTCaptureDevice defaultInputDeviceWithMediaType:QTMediaTypeSound];
@@ -149,9 +149,9 @@ NSComparisonResult compareViews(id<STUIProtocol> view1, id<STUIProtocol> view2, 
     
     // Start the capture session asynchronously since it is a fairly lengthy operation.
     [mQueue addOperationWithBlock:^{
-        [uiPlayButton setEnabled:NO];
-        [mCaptureSession startRunning];
-        [uiPlayButton setEnabled:YES];
+        [bSelf->uiPlayButton setEnabled:NO];
+        [bSelf->mCaptureSession startRunning];
+        [bSelf->uiPlayButton setEnabled:YES];
     }];
     
     // Set up the video and audio compression
@@ -327,7 +327,7 @@ NSComparisonResult compareViews(id<STUIProtocol> view1, id<STUIProtocol> view2, 
 // -----------------------------------------------------------------------------
 
 - (IBAction) playButtonClick: (id) sender {
-    
+    __block ChatWindowController* bSelf = self;
     if(mCaptureSession.isRunning){
         // Pause playback
         
@@ -335,7 +335,7 @@ NSComparisonResult compareViews(id<STUIProtocol> view1, id<STUIProtocol> view2, 
             [self recordButtonClick:nil];
         
         [mQueue addOperationWithBlock:^{
-            [mCaptureSession stopRunning];
+            [bSelf->mCaptureSession stopRunning];
         }];
         
         [uiRecordButton setEnabled:NO];
@@ -344,9 +344,9 @@ NSComparisonResult compareViews(id<STUIProtocol> view1, id<STUIProtocol> view2, 
     else {
         // Restart playback
         [mQueue addOperationWithBlock:^{
-            [uiPlayButton setEnabled:NO];
-            [mCaptureSession startRunning];
-            [uiPlayButton setEnabled:YES];
+            [bSelf->uiPlayButton setEnabled:NO];
+            [bSelf->mCaptureSession startRunning];
+            [bSelf->uiPlayButton setEnabled:YES];
         }];
         [uiPlayButton setImage:[NSImage imageNamed:@"control_pause.png"]];
         [uiRecordButton setEnabled:YES];

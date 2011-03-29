@@ -325,10 +325,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SkypeTestJGH_Prefix.pch;
+				GCC_PREFIX_HEADER = VideoConferenceExample_Prefix.pch;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = ./opencv/include;
-				INFOPLIST_FILE = "SkypeTestJGH-Info.plist";
+				INFOPLIST_FILE = "VideoConferenceExample-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,7 +337,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
-				PRODUCT_NAME = SkypeTestJGH;
+				PRODUCT_NAME = VideoConferenceExample;
 				WARNING_CFLAGS = "";
 			};
 			name = Debug;

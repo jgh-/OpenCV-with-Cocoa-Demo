@@ -23,7 +23,7 @@
 
 // -----------------------------------------------------------------------------
 - (void) awakeFromNib {
-    NSError *error;
+    //NSError *error;
     
     
     //mMovie = [QTMovie movieNamed:@"mars.mp4" error:&error];

@@ -89,6 +89,7 @@
     long dataSize;
     if(mCanUpdateFaces){
         
+        __block STOCVFaceTracker* bSelf = self;
         
         dataSize = CVPixelBufferGetDataSize(image);
         mCurrentImage = calloc(1,sizeof(IplImage));
@@ -123,9 +124,9 @@
             
             int scale = 2;
             NSMutableArray * faces = [[NSMutableArray alloc] initWithCapacity:1];
-            IplImage *  gray_image    = cvCreateImage(cvSize (mCurrentImage->width, mCurrentImage->height), IPL_DEPTH_8U, 1);
-            IplImage *  small_image   = cvCreateImage(cvSize(mCurrentImage->width / scale, mCurrentImage->height / scale), IPL_DEPTH_8U, 1);
-            cvCvtColor (mCurrentImage, gray_image, CV_BGR2GRAY);
+            IplImage *  gray_image    = cvCreateImage(cvSize (bSelf->mCurrentImage->width, mCurrentImage->height), IPL_DEPTH_8U, 1);
+            IplImage *  small_image   = cvCreateImage(cvSize(bSelf->mCurrentImage->width / scale, mCurrentImage->height / scale), IPL_DEPTH_8U, 1);
+            cvCvtColor (bSelf->mCurrentImage, gray_image, CV_BGR2GRAY);
             cvResize(gray_image, small_image, CV_INTER_LINEAR);
  
             
@@ -148,7 +149,7 @@
             } 
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 // Call back to the main thread with the list of faces
-                [self didFinishFaceDetectionWithPositions:faces];
+                [bSelf didFinishFaceDetectionWithPositions:faces];
             }];
         }];
     }
